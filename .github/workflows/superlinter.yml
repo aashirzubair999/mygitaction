@@ -1,4 +1,4 @@
-name: Super-Linter
+name: Super Linter
 
 on: push
 
@@ -9,10 +9,10 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
-    - name: Run Super-Linter
-      uses: github/super-linter@v3
+    - name: Run Super Linter
+      uses: super-linter/super-linter@v6
       env:
         DEFAULT_BRANCH: main
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
